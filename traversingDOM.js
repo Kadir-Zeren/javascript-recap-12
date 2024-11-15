@@ -15,3 +15,19 @@ console.log(" ***** TRAVERSING DOM **** ");
 
 //* 1- Yukari Yonde traverse
 //*--------------------------------------------------------
+
+//! parentElement, parentNode
+const addItem = document.querySelector(".add-item");
+console.log(addItem);
+
+console.log(addItem.parentElement); //? main
+console.log(addItem.parentNode.parentNode); //? body
+
+//! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer
+
+const list = document.querySelector(".list");
+console.log(list.textContent);
+
+console.log(list.closest("section")); //?//! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer;
+
+console.log(list.closest("body").querySelector("header h1").innerText);
